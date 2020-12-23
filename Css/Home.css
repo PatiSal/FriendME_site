@@ -2,14 +2,13 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #022539;
 }
 
 
 /* BARRA MENU SUPERIOR*/
 li, a, button {
 	font-family: 'Impact';
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 500;
 	color: #FCF2F1;
 	text-decoration: none;
@@ -22,6 +21,7 @@ header {
     padding: 15px 20px;
 	position:fixed;
 	width: 100%;
+	background-color: #022539;
 }
 
 .logo{
@@ -62,6 +62,7 @@ button:hover {
 }
 /*//////////////////////////////*/
 
+
 /* Config- Barra inferior*/
 .navbar2{
 	display: flex; 
@@ -79,7 +80,7 @@ button:hover {
 .navbar2 a {
 	color: #022539;
 	font-family: 'Constantia';
-	font-size: 15px;
+	font-size: 1rem;
 	font-weight: 200;
 	text-decoration: none;
 	background-color:#FB991C;
@@ -92,4 +93,76 @@ button:hover {
 
 .navbar2 a:active{
 	color:#FCF2F1;
+}
+/*///////////////////////////////*/ 
+
+/*Conf. REGISTO secção////*/
+
+.registo_container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background-image: url("../Imagem/gatocinza_home.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+.registo_container h1{
+	display:block;
+	background-color: transparent;
+	padding: 10vw;
+	font-family: 'impact';
+	font-size: 5rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+/*conf do butao de registo*/
+
+#registo .cta{
+	display:inline-block;
+	margin-left: 10vw;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	color: #FCF2F1; 
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+#registo .cta:hover{
+	background-color:#298FB5;
+}
+
+#animais{
+	max-width: 96vh;
+	margin: 0 auto;
+	padding: 6% 2%;
+}
+
+.ani-grid{
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center; 
+	width: 100%;
+}
+
+.ani-grid:after{
+	clear:both; 
+}
+
+.ani-grid:after, .ani-grid:before{
+	content:"";
+	display:table; 
+}
+
+.ani-grid li{
+	width: 328px;
+	height: 328px; 
 }

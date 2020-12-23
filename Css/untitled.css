@@ -1,0 +1,36 @@
+/* le buton */
+
+
+#registo .cta{
+	display: inline-block;
+	padding: 10px 30px; 
+	color: white; 
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	letter-spacing:.1rem;
+	margin-top: 36px;
+	transition: .3s ease background-color;
+	transition-property: background-color, color; 
+}
+
+#registo .cta:hover{
+	color: white;
+	background-color: crimson;
+}
+
+
+
+
+#registo::afer{
+	position: absolute;
+	left:0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity:.7;
+	z-index: -1;
+}
+
