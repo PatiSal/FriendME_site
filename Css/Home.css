@@ -114,6 +114,7 @@ button:hover {
 	background-color: transparent;
 	padding: 10vw;
 	font-family: 'impact';
+	font-weight: 800;
 	font-size: 5rem;
 	letter-spacing:.1rem;
 	text-decoration: none;
@@ -138,11 +139,64 @@ button:hover {
 	background-color:#298FB5;
 }
 
+
+
+/* SECÇÃO dos animais disponivei// */ 
+
 #animais{
-	max-width: 96vh;
+	max-width: 960px;
 	margin: 0 auto;
-	padding: 6% 2%;
+	padding: 2% 2%;
 }
+
+
+/* TITULO DA SECÇÃO*/
+
+
+.titulo{
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 3vh;
+	margin-left: 10vw;
+}
+
+
+.titulo h1{
+	display:block;
+	font-family: 'impact';
+	text-transform: uppercase;
+	color:#022539;
+	font-weight: 800;
+	font-size: 4rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+}
+
+
+/*butão nossos animais*/
+
+#animais .ctb{
+	align-content: center;
+	align-items: center;
+	display:inline-block;
+	margin-top: 5vh;
+	margin-left: 10vw;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	color: #FCF2F1; 
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+#animais .ctb:hover{
+	background-color:#298FB5;
+}
+
+
+/*GRID DE ITENS*/
 
 .ani-grid{
 	margin: 20px 0 0 0;
@@ -154,15 +208,89 @@ button:hover {
 }
 
 .ani-grid:after{
-	clear:both; 
+	clear:both; /* para não sobrepor*/
 }
 
 .ani-grid:after, .ani-grid:before{
 	content:"";
-	display:table; 
+	display:table; /*comporta-se como uma tabela*/
 }
 
 .ani-grid li{
 	width: 328px;
-	height: 328px; 
+	height: 328px;
+	display: inline-block;
+	margin:20px;
 }
+
+/*conf. das caixas dos animais*/
+
+.ani-box{
+	display:inline-grid;
+	width: 100%;
+	height:100%;
+	cursor: pointer;
+	border-radius: 10px;
+	
+	/* animação extra*/
+	-webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out,;
+}
+
+.ani-box:hover{
+	transform:scale(1.05);
+}
+
+
+/* img dos animais*/
+
+.ani-gaya{
+	background-image: url("../Imagem/gaya.png");
+}
+.ani-tome{
+	background-image: url("../Imagem/tome.png");
+}
+.ani-floppy{
+	background-image: url("../Imagem/Floppy.png");
+}
+.ani-noe{
+	background-image: url("../Imagem/noe.png");
+}
+
+
+/*conf. do texto da caixa*/ 
+
+.ani-info{
+	margin-top:250px;
+	width: inherit;
+	height: inherit;
+	background-color:#298FB5; 
+}
+
+.ani-info h3{
+	font-family:'impact';
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #FCF2F1;
+	font-size: 1.5rem;
+	margin: 0 30px;
+	padding: 2px 0 0 0;
+	line-height: 1.5
+}
+
+.ani-info p{
+	font-family: 'constatia';
+	color: #022539;
+	padding: 2px 2px;
+	margin: 0;
+	font-size: 0.8rem;
+	line-height: 2;
+	background-color: #FCF2F1;
+}
+
+
+
