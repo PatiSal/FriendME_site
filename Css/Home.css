@@ -140,13 +140,15 @@ button:hover {
 }
 
 
+/*//////////////////////*/
 
 /* SECÇÃO dos animais disponivei// */ 
 
 #animais{
-	max-width: 960px;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 2% 2%;
+	background-color:#022539;
 }
 
 
@@ -164,9 +166,10 @@ button:hover {
 
 .titulo h1{
 	display:block;
+	text-align: center;
 	font-family: 'impact';
 	text-transform: uppercase;
-	color:#022539;
+	color:#FCF2F1;
 	font-weight: 800;
 	font-size: 4rem;
 	letter-spacing:.1rem;
@@ -181,7 +184,7 @@ button:hover {
 	align-items: center;
 	display:inline-block;
 	margin-top: 5vh;
-	margin-left: 10vw;
+	margin-left: 45vh;
 	padding: 10px 30px; 
 	border-radius: 50px;
 	color: #FCF2F1; 
@@ -265,7 +268,7 @@ button:hover {
 /*conf. do texto da caixa*/ 
 
 .ani-info{
-	margin-top:250px;
+	margin-top:260px;
 	width: inherit;
 	height: inherit;
 	background-color:#298FB5; 
@@ -292,5 +295,131 @@ button:hover {
 	background-color: #FCF2F1;
 }
 
+/*//////////////////////////////*/ 
 
+
+/* Conf. secção sobre nós*/ 
+
+.sobre_container{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items:flex-start;
+	justify-content: left;
+	background-image: url("../Imagem/cao_doacao.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+.text_container{
+	min-height: 100vh;
+	width: 46%;
+	display: inline-block;
+	align-items:flex-start;
+	justify-content: left;
+}
+
+.text_container h1{
+	display:block;
+	background-color: transparent;
+	padding-top: 5vh;
+	padding-left: 5vw;
+	padding-bottom: 5vh;
+	font-family: 'impact';
+	font-weight: 800;
+	font-size: 5rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+.text_container h3{
+	display: block;
+	padding-left: 5vw;
+	padding-top: 1vh;
+	padding-bottom: 3vh;
+	font-family: 'constantia';
+	font-weight: 800;
+	font-size: 1rem;
+	text-decoration: none;
+	color:#022539;
+}
+
+.text_container p{
+	display: block;
+	padding-left: 5vw;
+	padding-top: 1.5vh;
+	padding-bottom: 3vh;
+	font-family: 'constantia';
+	font-weight: 400;
+	font-size: 1rem;
+	text-decoration: none;
+	color:#022539;
+}
+
+/*conf do butao de doação*/
+
+#sobre .ctc{
+	display:inline-block;
+	margin-left: 5vw;
+	margin-top: 3vh;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	color: #FCF2F1; 
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+#sobre .ctc:hover{
+	background-color:#298FB5;
+}
+
+/*/Conf. dicas*/ 
+
+.dicas_container{
+	min-height: 30vh;
+	width: 100%;
+	display: flex;
+	align-items:flex-start;
+	justify-content: center;
+	background-color:#022539;
+	background-position: top center;
+	background-size: cover;
+}
+
+.dicas_container h1{
+	display:block;
+	background-color: transparent;
+	padding-top: 10vh;
+	padding-left: 5vw;
+	padding-bottom: 5vh;
+	padding-right: 30%;
+	font-family: 'impact';
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #FCF2F1;
+}
+
+/*conf do butão dicas*/
+
+#dicas .ctl{
+	display:flex;
+	margin-left: 5vw;
+	margin-top: 3vh;
+	padding: 10px 30px; 
+	border-radius: 50px;
+	color: #FCF2F1; 
+	background-color:#FB991C;
+	font-size: 2rem; 
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+}
+
+#dicas .ctl:hover{
+	background-color:#298FB5;
+}
 
