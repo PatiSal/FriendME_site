@@ -1,36 +1,24 @@
-/* le buton */
-
-
-#registo .cta{
-	display: inline-block;
-	padding: 10px 30px; 
-	color: white; 
-	background-color: transparent;
-	border: 2px solid crimson;
-	font-size: 2rem; 
-	text-transform: uppercase;
-	letter-spacing:.1rem;
-	margin-top: 36px;
-	transition: .3s ease background-color;
-	transition-property: background-color, color; 
-}
-
-#registo .cta:hover{
-	color: white;
-	background-color: crimson;
-}
-
-
-
-
-#registo::afer{
-	position: absolute;
-	left:0;
-	top: 0;
-	height: 100%;
+.dicas_container{
+	min-height: 30vh;
 	width: 100%;
-	background-color: black;
-	opacity:.7;
-	z-index: -1;
+	display: flex;
+	align-items:flex-start;
+	justify-content: center;
+	background-color:#022539;
+	background-position: top center;
+	background-size: cover;
 }
 
+.dicas_container h1{
+	display:block;
+	background-color: transparent;
+	padding-top: 10vh;
+	padding-left: 5vw;
+	padding-bottom: 5vh;
+	padding-right: 30%;
+	font-family: 'impact';
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #FCF2F1;
