@@ -13,15 +13,68 @@
 
 <body>
 
-	<!--Barra de Menu superior-->
+<!--Barra de Menu superior--------------------------------------------------------------------->
+	
 	<header>
-		<img class="logo" src="../Imagem/LOGO 1.svg" alt="logo">
+		
+		<a class="logo" href="Home.html"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
 		<nav>
 			<ul class= "nav_links">
-				<li><a href= "a">ADOTAR</a></li><li><a href= "a">DOAÇÃO</a></li><li><a href= "a">CUIDADOS</a></li></ul>
+				<li><a href= "adocao.html">ADOTAR</a></li>
+				<li><a href= "doacao.html">DOAÇÃO</a></li>
+				<li><a href= "dicas.html">CUIDADOS</a></li>
+			</ul>
 		</nav>
-		<a class="login" href="a"><button>Login</button></a>
+		
+		<a class="login" href="login.html"><button>Login</button></a>
+	
 	</header>
+	
+	<div class= "caixadoacao">
+    
+		<p> A "Friend Me?" tem o hábito de realizar campanhas de recolha de alimentos e objetos para animais de estimação </p>
+		<p> Aceitamos qualquer tipo de doação, caso queira contribuir monetariamente, eis o nosso <span>IBAN: 0045 00678943 0034 08</span></p>
+		<p>Para receber informação acerca das nossas campanhas, por favor, escreva o seu e-mail:</p>
+    
+		<form>
+			<input type="email" name="email" placeholder="escreva aqui o seu email">
+    
+			<p>Necessitamos sempre de quem possa tornar-se FAT (Família de Acolhimento Temporário).</p>
+			<p>Caso esteja interessado, escreva o seu contacto telefónico:</p>
+    
+			<input type="tel" name="telefone" placeholder="escreva aqui o seu contacto"><br>
+
+			<div class= "obrigado">
+				<p>Muito Obrigado</p>
+			</div>
+			
+			 <a class=button onclick="pop()"> Quero Contribuir </a> <br><br>
+					 
+				</form>
+				<div id= "alert">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<h1> OBRIGADO</h1>
+					<p> Iremos em breve entrar em contacto...</p>
+					<a href="Home.html"type=button class= "close" >OK</a>
+				</div>
+							
+				<script type="text/javascript">
+					var c= 0;
+					function pop(){
+						if (c==0){
+							document.getElementById("alert").style.display = "block";
+							c=1;
+						}else{
+							document.getElementById("alert").style.display = "none";
+							c=0;
+						}
+					}
+							
+				</script>
+		</form>
+    </div>
 	
 </body>
 </html>
