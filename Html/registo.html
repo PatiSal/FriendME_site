@@ -87,12 +87,33 @@
 						 <input type="checkbox" name="termos" value="termos">  Ao clicar em REGISTAR, eu aceito todos termos e privacidade <br>
 					 </div>
 						
-					 <button type="submit"> REGISTAR </button> <br><br>
+					 <a class=button onclick="pop()"> REGISTAR </a> <br><br>
+					 
 				</form>
-			</div>
+				<div id= "alert">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<h1> OBRIGADO</h1>
+					<p> O seu registo foi concluido com sucesso</p>
+					<a href="Home.html"type=button class= "close" >OK</a>
+				</div>
+							
+				<script type="text/javascript">
+					var c= 0;
+					function pop(){
+						if (c==0){
+							document.getElementById("alert").style.display = "block";
+							c=1;
+						}else{
+							document.getElementById("alert").style.display = "none";
+							c=0;
+						}
+					}
+							
+							</script>
 		</div>
 	</div>
 </section>
+							
 
 </body>
 </html>
