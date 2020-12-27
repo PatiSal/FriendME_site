@@ -128,10 +128,12 @@ button:hover {
 	margin-left: 10vw;
 	padding: 10px 30px; 
 	border-radius: 50px;
+	border:none;
 	color: #FCF2F1; 
 	background-color:#FB991C;
 	font-size: 2rem; 
 	text-transform: uppercase;
+	cursor:pointer;
 	transition: all 0.3s ease 0s;
 }
 
@@ -180,16 +182,19 @@ button:hover {
 /*butão nossos animais*/
 
 #animais .ctb{
-	align-content: center;
-	align-items: center;
 	display:inline-block;
 	margin-top: 5vh;
-	margin-left: 45vh;
+	width: 40%;
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
 	padding: 10px 30px; 
 	border-radius: 50px;
+	border:none;
 	color: #FCF2F1; 
 	background-color:#FB991C;
-	font-size: 2rem; 
+	font-size: 2rem;
+	cursor: pointer;
 	text-transform: uppercase;
 	transition: all 0.3s ease 0s;
 }
@@ -220,8 +225,8 @@ button:hover {
 }
 
 .ani-grid li{
-	width: 328px;
-	height: 328px;
+	width: 500px;
+	height: 500px;
 	display: inline-block;
 	margin:20px;
 }
@@ -236,10 +241,7 @@ button:hover {
 	border-radius: 10px;
 	
 	/* animação extra*/
-	-webkit-transition: 0.3s ease-in-out, 
-    -webkit-transform 0.3s ease-in-out;
-	-moz-transition:  0.3s ease-in-out, 
-    -moz-transform 0.3s ease-in-out;
+	
     transition: all 0.3s ease-in-out, 
     transform 0.3s ease-in-out,;
 }
@@ -253,22 +255,30 @@ button:hover {
 
 .ani-gaya{
 	background-image: url("../Imagem/gaya.png");
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 .ani-tome{
 	background-image: url("../Imagem/tome.png");
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 .ani-floppy{
 	background-image: url("../Imagem/Floppy.png");
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 .ani-noe{
 	background-image: url("../Imagem/noe.png");
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 
 
 /*conf. do texto da caixa*/ 
 
 .ani-info{
-	margin-top:260px;
+	margin-top:415px;
 	width: inherit;
 	height: inherit;
 	background-color:#298FB5; 
@@ -279,7 +289,7 @@ button:hover {
 	text-transform: uppercase;
 	font-weight: 400;
 	color: #FCF2F1;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin: 0 30px;
 	padding: 2px 0 0 0;
 	line-height: 1.5
@@ -290,7 +300,7 @@ button:hover {
 	color: #022539;
 	padding: 2px 2px;
 	margin: 0;
-	font-size: 0.8rem;
+	font-size: 1.5rem;
 	line-height: 2;
 	background-color: #FCF2F1;
 }
@@ -365,10 +375,12 @@ button:hover {
 	margin-top: 3vh;
 	padding: 10px 30px; 
 	border-radius: 50px;
+	border:none;
 	color: #FCF2F1; 
 	background-color:#FB991C;
 	font-size: 2rem; 
 	text-transform: uppercase;
+	cursor: pointer;
 	transition: all 0.3s ease 0s;
 }
 
@@ -382,7 +394,7 @@ button:hover {
 	min-height: 30vh;
 	width: 100%;
 	display: flex;
-	align-items:flex-start;
+	align-items:center;
 	justify-content: center;
 	background-color:#022539;
 	background-position: top center;
@@ -395,31 +407,98 @@ button:hover {
 	padding-top: 10vh;
 	padding-left: 5vw;
 	padding-bottom: 5vh;
-	padding-right: 30%;
-	font-family: 'impact';
-	font-weight: 400;
+	padding-right: 20%;
+	font-family: 'constantia';
+	font-weight: 300;
 	font-size: 2rem;
 	letter-spacing:.1rem;
 	text-decoration: none;
 	color: #FCF2F1;
 }
 
+
 /*conf do butão dicas*/
 
-#dicas .ctl{
-	display:flex;
-	margin-left: 5vw;
+.dicas_container a{
+	display:inline-block;
 	margin-top: 3vh;
+	margin-right: 25px;
 	padding: 10px 30px; 
 	border-radius: 50px;
+	border:none;
 	color: #FCF2F1; 
 	background-color:#FB991C;
-	font-size: 2rem; 
+	font-size: 1.5rem;
+	cursor: pointer;
 	text-transform: uppercase;
+	text-align: center;
 	transition: all 0.3s ease 0s;
 }
 
-#dicas .ctl:hover{
+.dicas_container a:hover{
 	background-color:#298FB5;
 }
+ 
+/*/Conf. Parcerias*/ 
 
+.parceria_container {
+	background-color: #FB991C;
+	min-height: 70vh;
+	width: 100%;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background-position: top center;
+	background-size: cover;
+}
+
+.list_container{
+	background-color: transparent;
+	min-height: 70vh;
+	width:50%;
+	display: block;
+	align-content: center;
+	text-align: left;
+	background-position: top center;
+	background-size: cover;
+}
+
+.parceria_container h2{
+	display:block;
+	background-color: transparent;
+	padding-top: 10vh;
+	padding-left: 5vw;
+	padding-bottom: 5vh;
+	font-family: 'constantia';
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2rem;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color:#022539;
+}
+
+.parceria_container ol li{
+	display: block;
+	padding-left: 5vw;
+	padding-top: 1.5vh;
+	padding-bottom: 3vh;
+	font-family: 'constantia';
+	font-weight: 500;
+	font-size: 1.3rem;
+	text-decoration:none;
+	color:#FCF2F1;
+}
+
+/*conf. do mapa*/
+
+.map_container{
+	display:inline-block;
+	width: 50%;
+	max-width: 700px;
+	max-height: 500px;
+}
+
+.mapa{
+	width:100%;
+}
