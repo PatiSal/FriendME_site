@@ -11,16 +11,88 @@
 </head>
 
 <body>
-
-<!--Barra de Menu superior-->
+	<!--Barra de Menu superior--------------------------------------------------------------------->
+	
 	<header>
-		<img class="logo" src="../Imagem/LOGO 1.svg" alt="logo">
+		
+		<a class="logo" href="Home.html"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
 		<nav>
 			<ul class= "nav_links">
-				<li><a href= "a">ADOTAR</a></li><li><a href= "a">DOAÇÃO</a></li><li><a href= "a">CUIDADOS</a></li></ul>
+				<li><a href= "adocao.html">ADOTAR</a></li>
+				<li><a href= "doacao.html">DOAÇÃO</a></li>
+				<li><a href= "dicas.html">CUIDADOS</a></li>
+			</ul>
 		</nav>
-		<a class="login" href="a"><button>Login</button></a>
+		
+		<a class="login" href="login.html"><button>Login</button></a>
+	
 	</header>
 	
+	<section id="FORM">
+		
+		<div class= "form">
+			<div class= "registar">
+				
+				<div> 
+					<h1>REGISTAR</h1>
+				</div>
+			</div>
+	
+			<div class= "box">
+				
+				<div class="formulario">
+			 	<form>
+				 	<fieldset>
+						 <legend> Informação Pessoal </legend>
+						
+						<label for= "Nome"><b>Nome:</label>
+						 	<input type= "text" name= "Nome"> <br>
+						 
+						<label for= "Apelido"><b>Apelido:</label>
+					 		<input type= "text" name= "Apelido"><br>
+						
+						<label for= "Genero"><b>Gênero:</label>
+					 		<input type= "radio" name="genero" value="male" checked> Masculino 
+						 	<input type= "radio" name= "genero" value="female"> Feminino
+						 	<input type= "radio" name= "genero" value="outro"> Outros<br>
+					 	
+						<label for= "bday"><b>Data de Nascimento:</label>
+						 	<input type= "date" name="bday" max= "2002-01-01" min= "1920-12-31"><br>
+						 
+						<label for= "email"><b>Email:</label>
+						 	<input type="email" name="email"><br>
+						 
+						<label for= "tel"><b>Telefone:</label>
+						 	<input type="tel" name="telefone"><br>
+					 	
+						<label for= "pswrd"><b>Password:</label>
+							 <input type="password" name="pswrd"><br>
+				 	
+					
+					</fieldset> <br><br>
+				 
+				 <label for= "motiv"><b>Minha motivação para adotar:</label>
+				 	<input type="range" name="points" min=0 max=5 class=slider><br><br>
+					
+					<div class= "textarea">
+						<div class="text2">Motivo para adotar</div>
+						<textarea rows="5" cols="50" re></textarea>
+						<input type= "reset" value="APAGAR">
+					 </div>
+						
+					
+					<div class= "termos">
+						 <input type="checkbox" name="termos" value="termos">  Ao clicar em REGISTAR, eu aceito todos termos e privacidade <br>
+					 </div>
+						
+					 <button type="submit"> REGISTAR </button> <br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
 </body>
 </html>

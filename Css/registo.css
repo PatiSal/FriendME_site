@@ -2,31 +2,33 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #022539;
 }
 
 
 /* BARRA MENU SUPERIOR*/
+
 li, a, button {
 	font-family: 'Impact';
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 500;
-	color: #FCF2F1;
 	text-decoration: none;
+	color: #FCF2F1;
 }
 
 header {
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 20px;
+    display: flex;
 	position:fixed;
-	width: 100%; 
+	width: 100%;
+	padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
 }
 
 .logo{
+	width: 15vh;
+	padding-left: 15px;
 	cursor: pointer;
-	width: 15%;
 }
 
 .nav_links{
@@ -38,25 +40,187 @@ header {
 	padding: 0px 20px;
 }
 
-.nav_links li a {
+.login {
 	transition: all 0.3s ease 0s;
+	
 }
 
-.nav_links li a:hover{
+.login:hover{
 	color: #298FB5;
 }
 
 button {
-	padding: 9px 25px;
-	background-color: #FB991C;
+	padding: 5px 25px;
+	padding-right: 15px;
 	border: none; 
 	border-radius: 50px; 
 	cursor: pointer;
+	background-color: #FB991C;
 	transition: all 0,3s ease 0s;
 }
 
 button:hover {
 	background-color: #298FB5;
 }
-/*//////////////////////////////*/
 
+
+
+/* SECÇÃO DE REGISTO////////*/
+
+/*fundo*/
+
+section{
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 100px;
+	justify-content: center;
+	align-items: center;
+	background-image:url("../Imagem/gato_registo.png");
+	background-position: top center;
+	background-size: cover;
+}
+
+.registar{
+	display: flex;
+	margin-top: 20vh;
+	width: 100%;
+	height: 5%;
+}
+
+.registar h1{
+	display: inline;
+	padding: 10vw;
+	background-color: transparent;
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+.box{
+	
+	max-width: 600px;
+	padding:50px;
+	border-radius: 10px;
+	background: rgba(255,255,255,.7);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+legend{
+	padding-left: 20px;
+	font-family: 'impact';
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #022539;
+	line-height: 50px;
+}
+
+label{
+	padding-left: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 300;
+	color: #298FB5;
+	line-height: 30px;
+}
+
+input{
+	border:none;
+	font-family: 'constantia';
+	font-weight: 200;
+	color: #022539
+}
+
+input[type="radio"]{
+	cursor: pointer;
+}
+
+input[type="date"]{
+	cursor: pointer;
+}
+
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #FCF2F1;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #022539;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #022539;
+  cursor: pointer;
+}
+
+
+.textarea{
+	padding-left: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 800;
+	color: #298FB5;
+	line-height: 30px;
+}
+
+textarea{
+	border:none;
+}
+
+input[type="reset"]{
+	padding: 5px 25px;
+	border-radius: 50px;
+	border: none;
+	background-color:#FB991C;
+	font-family: 'impact';
+	font-weight: 100;
+	letter-spacing: 1px;
+	color:#FCF2F1;
+	cursor: pointer;
+	transition: all 0,3s ease 0s;
+}
+
+.termos{
+	padding-top: 5vh;
+	padding-left: 10px;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 800;
+	color: #298FB5;
+	line-height: 30px; 
+}
+
+button {
+	margin-top:30px;
+	padding: 5px 25px;
+	padding-right: 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+	transition: all 0,3s ease 0s;
+}
+
+button:hover {
+	background-color: #298FB5;
+}
