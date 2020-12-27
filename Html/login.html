@@ -14,13 +14,77 @@
 	
 <!--Barra de Menu superior-->
 	<header>
-		<img class="logo" src="../Imagem/LOGO 1.svg" alt="logo">
+		
+		<a class="logo" href="Home.html"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
 		<nav>
 			<ul class= "nav_links">
-				<li><a href= "a">ADOTAR</a></li><li><a href= "a">DOAÇÃO</a></li><li><a href= "a">CUIDADOS</a></li></ul>
+				<li><a href= "adocao.html">ADOTAR</a></li>
+				<li><a href= "doacao.html">DOAÇÃO</a></li>
+				<li><a href= "dicas.html">CUIDADOS</a></li>
+			</ul>
 		</nav>
-		<a class="login" href="a"><button>Login</button></a>
+		
+		<a class="login" href="login.html"><button>Login</button></a>
+	
 	</header>
 	
 </body>
+	
+<div class= "caixalogin">
+     <div class= "titulologin" >LOGIN  </div>
+    <form>
+		<input type="email" name ="email" placeholder= "Escreva aqui seu email">
+		
+		<input type="password" name="pswrd" placeholder= "Crie uma password" id="myInput">
+		
+		<input type="checkbox" onclick="myFunction()">Mostrar Password
+		
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myInput");
+				if (x.type === "password") {
+					x.type = "text";
+				} else {
+					x.type = "password";
+				}
+			}
+		</script>
+		
+		<div class ="psw"> Esqueci-me da minha <a href="#">password?</a> </div>
+		
+		<a class=button onclick="pop()"> LOGIN </a>
+		
+		<div id= "alert">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					<h1> OLÁ</h1>
+					<p>Seja Bem-vindo de volta</p>
+					<a href="Home.html"type=button class= "close" >OK</a>
+				</div>
+							
+				<script type="text/javascript">
+					var c= 0;
+					function pop(){
+						if (c==0){
+							document.getElementById("alert").style.display = "block";
+							c=1;
+						}else{
+							document.getElementById("alert").style.display = "none";
+							c=0;
+						}
+					}
+							
+				</script>
+		
+		
+     
+	</form>
+     
+	
+     <div class= "caixaregistar">
+         <div class= "registo" > Ainda não esá registado? </div>
+         <a href="registo.html" type=button class= "registar" >REGISTAR</a> 
+	</div>
+</div>
 </html>

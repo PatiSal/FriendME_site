@@ -2,31 +2,33 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #022539;
 }
 
 
 /* BARRA MENU SUPERIOR*/
+
 li, a, button {
 	font-family: 'Impact';
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 500;
-	color: #FCF2F1;
 	text-decoration: none;
+	color: #FCF2F1;
 }
 
 header {
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 20px;
+    display: flex;
 	position:fixed;
 	width: 100%;
+	padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
 }
 
 .logo{
+	width: 15vh;
+	padding-left: 15px;
 	cursor: pointer;
-	width: 15%;
 }
 
 .nav_links{
@@ -39,7 +41,7 @@ header {
 }
 
 .nav_links li a {
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s; 
 }
 
 .nav_links li a:hover{
@@ -47,16 +49,191 @@ header {
 }
 
 button {
-	padding: 9px 25px;
-	background-color: #FB991C;
+	padding: 5px 25px;
+	padding-right: 15px;
 	border: none; 
 	border-radius: 50px; 
 	cursor: pointer;
+	background-color: #FB991C;
 	transition: all 0,3s ease 0s;
 }
 
 button:hover {
 	background-color: #298FB5;
 }
+
+
 /*//////////////////////////////*/
 
+
+.caixalogin{
+    background-color: #FCF2F1;
+    margin:auto;
+    padding:40px;
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 30%;
+    width: 500px;
+    height: 430px;
+}
+.caixalogin:before{
+    background-image: url("../Imagem/cao_login.png");
+    width: 100%;
+    height: 100%;
+    -webkit- background-size:cover;
+    background-size: cover;
+    content:'';
+    position: fixed;
+    left:0;
+    right: 0;
+    top:0;
+    z-index: -1;
+    display: block;
+    filter:blur(2px);
+}
+
+.titulologin {
+    font-size: 37px;
+    color:#022539;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.caixalogin input {
+    margin:10px 0;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Impact';
+}
+
+.psw {
+    float: center;
+    padding-top: 16px;
+	padding-bottom: 20px;
+    color:#022539;
+}
+
+.psw a{
+    color:#FB991C;
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+}
+
+.button{
+    background-color: #FB991C;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 200px;
+    margin:20px 0;
+    
+}
+
+input[type="checkbox"]{
+	width: 42px;
+	height: 12px
+}
+
+.button:hover{ 
+    background-color: #298FB5;
+}
+
+
+#alert{
+	width: 500px;
+	overflow: hidden;
+	background: #FCF2F1;
+	box-shadow: 0 0 20px black;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 9999;
+	padding: 10px;
+	text-align: center;
+	display: none;
+}
+
+#alert i{
+	color: #2ecc71;
+	font-size: 4rem;
+	display: block;
+	margin: 20px 0;
+}
+
+#alert h1{
+	font-family: 'impact';
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing:.1rem;
+	text-decoration: none;
+	color: #022539;
+}
+
+
+#alert p{
+	font-family: 'constantia';
+	font-size: 1rem;
+	font-weight: 200;
+	color:#298FB5;
+	padding-bottom: 5vh;
+}
+
+.close{
+	text-align: center;
+	font-size:1rem;
+	margin-top:30px;
+	padding: 5px 25px;
+	padding-right: 15px;
+	border: none; 
+	border-radius: 50px; 
+	cursor: pointer;
+	background-color: #FB991C;
+}
+
+.caixaregistar{
+    background-color: #022539;
+    margin-top:20px;
+    padding:10px;
+    border-radius: 0px;
+    position: absolute;
+    width: 500px;
+	height: 100px;
+    right: 0;
+    left: 0;
+}
+
+.registo{
+    font-size: 20px;
+    font-family: Constantia;
+    color:#fff;
+    font-weight: 300;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+.registar{
+    background-color: #FB991C;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 200px;
+    margin:20px 0;
+    
+}
