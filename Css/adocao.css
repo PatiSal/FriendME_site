@@ -2,31 +2,33 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background-color: #022539;
 }
 
 
 /* BARRA MENU SUPERIOR*/
+
 li, a, button {
 	font-family: 'Impact';
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 500;
-	color: #FCF2F1;
 	text-decoration: none;
+	color: #FCF2F1;
 }
 
 header {
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 20px;
+    display: flex;
 	position:fixed;
-	width: 100%; 
+	width: 100%;
+	padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #022539;
 }
 
 .logo{
+	width: 15vh;
+	padding-left: 15px;
 	cursor: pointer;
-	width: 15%;
 }
 
 .nav_links{
@@ -39,7 +41,7 @@ header {
 }
 
 .nav_links li a {
-	transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s; 
 }
 
 .nav_links li a:hover{
@@ -47,16 +49,19 @@ header {
 }
 
 button {
-	padding: 9px 25px;
-	background-color: #FB991C;
+	padding: 5px 25px;
+	padding-right: 15px;
 	border: none; 
 	border-radius: 50px; 
 	cursor: pointer;
+	background-color: #FB991C;
 	transition: all 0,3s ease 0s;
 }
 
 button:hover {
 	background-color: #298FB5;
 }
+
+
 /*//////////////////////////////*/
 
