@@ -1,10 +1,119 @@
 <!doctype html>
 <html>
 <head>
+	
 <meta charset="utf-8">
-<title>Documento sem título</title>
+
+<title>VOLDERMORT</title>
+	
+<link rel="stylesheet" href="../Css/VOLDERMORT.css">
+	
 </head>
 
+	<!--Barra de Menu superior--------------------------------------------------------------------->
+	
+	<header>
+		
+		<a class="logo" href="../../Html/Home.html"><img src="../../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
+		<nav>
+			<ul class= "nav_links">
+				<li><a href= "../../Html/adocao.html">ADOTAR</a></li>
+				<li><a href= "../../Html/doacao.html">DOAÇÃO</a></li>
+				<li><a href= "../../Html/dicas.html">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<a class="login" href="../../Html/login.html"><button>Login</button></a>
+	
+	</header>
+	
 <body>
+	<section id= "info">
+		
+		<div class= "titulo">
+			<h1>VOLDEMORT</h1>
+			<p>Voldemort é um gato da raça Sphinx, ele tem 2 anos de idade. É um gato extremamente brincalhão e activo. Os gatos desta raça necessitam de extra-cuidados, relativamente a temperatura e alimentação.   </p>
+		</div>
+		
+		<div class="personalidade">
+			
+			<h2>Traços de Personalidade</h2>
+			
+			<ul>
+				<li>Inteligente</li><li>Sensível</li><li>Brincalhão</li>
+			</ul> 
+			
+		</div>
+		
+		<div class= "button">
+			<a class="login" href="../../Html/Adotar_form.html"><button>ADOTAR</button></a>
+		</div>
+	
+	</section>
+	
+	
+	<section id= "galeria">
+	
+		<img id="featured" src="../../Imagem/voldemort.png">
+		
+		<div id="slide-wrapper">
+			
+			<img id="slideLeft" class="arrow" src="../../Imagem/arrow_left.svg">
+			
+			<div id="slider">
+				
+				<img class="thumbnail active" src="../../Imagem/voldemort.png">
+			
+				<img class="thumbnail" src="../../Imagem/voldemort1.jpg">
+				<img class="thumbnail" src="../../Imagem/voldemort2.jpg">
+				<img class="thumbnail" src="../../Imagem/voldemort3.jpg">
+				<img class="thumbnail" src="../../Imagem/voldemort4.jpg">
+			</div>
+			
+			<img id="slideRight" class="arrow" src="../../Imagem/arrow_right.svg">
+		</div>
+		
+	
+	<script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+
+	</script>
+		
+		
+		
+	</section>
+	
 </body>
 </html>

@@ -1,10 +1,119 @@
 <!doctype html>
 <html>
 <head>
+	
 <meta charset="utf-8">
-<title>Documento sem título</title>
+
+<title>TOMÉ</title>
+	
+<link rel="stylesheet" href="../Css/FLOPPY.css">
+	
 </head>
 
+	<!--Barra de Menu superior--------------------------------------------------------------------->
+	
+	<header>
+		
+		<a class="logo" href="../../Html/Home.html"><img src="../../Imagem/LOGO 1.svg" alt="logo"></a>
+		
+		
+		<nav>
+			<ul class= "nav_links">
+				<li><a href= "../../Html/adocao.html">ADOTAR</a></li>
+				<li><a href= "../../Html/doacao.html">DOAÇÃO</a></li>
+				<li><a href= "../../Html/dicas.html">CUIDADOS</a></li>
+			</ul>
+		</nav>
+		
+		<a class="login" href="../../Html/login.html"><button>Login</button></a>
+	
+	</header>
+	
 <body>
+	<section id= "info">
+		
+		<div class= "titulo">
+			<h1>FLOPPY</h1>
+			<p>Um cão muita energia e brincalhão, perfeito para quem tem crianças por casa.  Tem 8 meses de idade.  Foi abandonado. Floppy aguarda pela sua oportunidade de ter o seu melhor amigo.</p>
+		</div>
+		
+		<div class="personalidade">
+			
+			<h2>Traços de Personalidade</h2>
+			
+			<ul>
+				<li>Brincalhão</li><li>Activo</li><li>Carinhoso</li>
+			</ul> 
+			
+		</div>
+		
+		<div class= "button">
+			<a class="login" href="../../Html/Adotar_form.html"><button>ADOTAR</button></a>
+		</div>
+	
+	</section>
+	
+	
+	<section id= "galeria">
+	
+		<img id="featured" src="../../Imagem/Floppy.png">
+		
+		<div id="slide-wrapper">
+			
+			<img id="slideLeft" class="arrow" src="../../Imagem/arrow_left.svg">
+			
+			<div id="slider">
+				
+				<img class="thumbnail active" src="../../Imagem/Floppy.png">
+			
+				<img class="thumbnail" src="../../Imagem/floppy1.jpg">
+				<img class="thumbnail" src="../../Imagem/floppy2.jpg">
+				<img class="thumbnail" src="../../Imagem/floppy3.jpg">
+				<img class="thumbnail" src="../../Imagem/floppy4.jpg">
+			</div>
+			
+			<img id="slideRight" class="arrow" src="../../Imagem/arrow_right.svg">
+		</div>
+		
+	
+	<script type="text/javascript">
+		let thumbnails = document.getElementsByClassName('thumbnail')
+
+		let activeImages = document.getElementsByClassName('active')
+
+		for (var i=0; i < thumbnails.length; i++){
+
+			thumbnails[i].addEventListener('mouseover', function(){
+				console.log(activeImages)
+				
+				if (activeImages.length > 0){
+					activeImages[0].classList.remove('active')
+				}
+				
+
+				this.classList.add('active')
+				document.getElementById('featured').src = this.src
+			})
+		}
+
+
+		let buttonRight = document.getElementById('slideRight');
+		let buttonLeft = document.getElementById('slideLeft');
+
+		buttonLeft.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft -= 180
+		})
+
+		buttonRight.addEventListener('click', function(){
+			document.getElementById('slider').scrollLeft += 180
+		})
+
+
+	</script>
+		
+		
+		
+	</section>
+	
 </body>
 </html>
