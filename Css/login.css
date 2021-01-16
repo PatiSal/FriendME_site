@@ -66,6 +66,7 @@ button:hover {
 /*//////////////////////////////*/
 
 
+/*////// CAIXA DE LOGIN ////////*/
 .caixalogin{
     background-color: #FCF2F1;
     margin:auto;
@@ -79,6 +80,8 @@ button:hover {
     width: 500px;
     height: 430px;
 }
+
+/*para imagem de fundo com um cão que serve de sobreposição*/
 .caixalogin:before{
     background-image: url("../Imagem/cao_login.png");
     width: 100%;
@@ -95,6 +98,8 @@ button:hover {
     filter:blur(2px);
 }
 
+
+/*Secção do titulo*/
 .titulologin {
     font-size: 37px;
     color:#022539;
@@ -103,6 +108,7 @@ button:hover {
     text-align: center;
 }
 
+/*CONF. DO INPUT/*/
 .caixalogin input {
     margin:10px 0;
     border:none;
@@ -113,6 +119,15 @@ button:hover {
     font-family: 'Impact';
 }
 
+/*Conf. do checkbox para ver a pswrd*/
+
+input[type="checkbox"]{
+	width: 42px;
+	height: 12px
+}
+
+
+/*conf. esqueci password/*/
 .psw {
     float: center;
     padding-top: 16px;
@@ -127,6 +142,8 @@ button:hover {
 	font-weight: 200;
 }
 
+
+/*CONF. DO Botão para login/*/
 .button{
     background-color: #FB991C;
     color: #fff;
@@ -139,16 +156,12 @@ button:hover {
     
 }
 
-input[type="checkbox"]{
-	width: 42px;
-	height: 12px
-}
-
 .button:hover{ 
     background-color: #298FB5;
 }
 
 
+/*CONF. DO POP UP ALERTA*/
 #alert{
 	width: 500px;
 	overflow: hidden;
@@ -190,6 +203,7 @@ input[type="checkbox"]{
 	padding-bottom: 5vh;
 }
 
+/*cONF. do botão para fechar o pop up e ir para a homepage*/
 .close{
 	text-align: center;
 	font-size:1rem;
@@ -202,6 +216,7 @@ input[type="checkbox"]{
 	background-color: #FB991C;
 }
 
+/*Conf da secção do registar*/
 .caixaregistar{
     background-color: #022539;
     margin-top:20px;
@@ -222,8 +237,6 @@ input[type="checkbox"]{
     padding-bottom: 15px;
     text-align: center;
 }
-
-
 
 
 .registar{
