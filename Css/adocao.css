@@ -50,8 +50,7 @@ header {
 
 /*botão  login*/
 button {
-	padding: 5px 25px;
-	padding-right: 15px;
+	padding: 5px 15px;
 	border: none; 
 	border-radius: 50px; 
 	cursor: pointer;
