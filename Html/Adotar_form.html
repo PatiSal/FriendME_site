@@ -4,25 +4,29 @@
 	
 	<meta charset="utf-8">
 	
+	<!-- Css externo-->
 	<link rel="stylesheet" href="../Css/adotar_form.css">
 	
 	<title>ADOTAR</title>
 	
-<!--tentativa de colocação de imagem no title-->
-	<link rel="icon" href="../Imagem/favicon.ico" type="image/x-icon">
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
 
 </head>	
 	
 <body>
 	
-	<!--Barra de Menu superior--------------------------------------------------------------------->
+	<!--BARRA DE MENU-->
 	
 	<header>
 		
+		<!--Colocação do logo com link para pagina "HOME"-->
 		<a class="logo" href="Home.html"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
 		
 		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
 		<nav>
+			
 			<ul class= "nav_links">
 				<li><a href= "adocao.html">ADOTAR</a></li>
 				<li><a href= "doacao.html">DOAÇÃO</a></li>
@@ -30,12 +34,17 @@
 			</ul>
 		</nav>
 		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
 		<a class="login" href="login.html"><button>Login</button></a>
 	
 	</header>
 	
 	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	
 </body>
+	
 	
 	<section id="iframe">
 		<div class= "titlef">
@@ -44,6 +53,8 @@
 			<h2>Regulamento de Adoção</h2>
 		
 		</div>
+		
+		<!--IFRAME COM OS TERMOS DE ADOÇÃO-->
 		
 		<div class= "frame">
 			
@@ -54,30 +65,40 @@
 	
 	</section>
 	
+	
+	
 	<section id= "form">
 		<div class= "forma">
 			
 			<h2>Formulário para adoção</h2>
 			
 			<div class= "caixaform">
+				
+				
+				<!-- FORMULÁRIO PARA ADOÇÃO-->
+				
 				<form>
 					 
 					<fieldset> <legend> Informação Pessoal </legend>
 						
+						<!--NOME E APELIDO-->
 						<label for= "Nome"><b>Nome:</b></label>
 							<input type= "text" name= "Nome"> <br>
 						
 						<label for= "Apelido"><b>Apelido:</b></label>
 							<input type= "text" name= "Apelido"><br>
 						
+						<!--GÊNERO-->
 						<label for= "Genero"><b>Gênero:</b></label>
-							<input type= "radio" name="genero" value="male" checked> Masculino
+							<input type= "radio" name="genero" value="male" > Masculino
 							<input type= "radio" name= "genero" value="female"> Feminino
-							<input type= "radio" name= "genero" value="outro"> Outros<br>
+							<input type= "radio" name= "genero" value="outro"checked> Outros<br>
 						
+						<!--DATA DE NASCIMENTO-->
 						<label for= "bday"><b>Data de Nascimento:</b></label>
 							<input type= "date" name="bday" max= "2002-01-01" min= "1920-12-31"><br>
 						
+						<!--TIPO DE MORADIA-->
 						<label for= "moradia"><b>Tipo de Moradia:</b></label>
 							<input list="moradia" name="moradia">
 								<datalist id= "moradia">
@@ -88,14 +109,22 @@
 									<option value= "moradia com terreno"></option>
 								</datalist> <br>
 						
+						<!--MORADA-->
+						
 						<label for= "morada"><b>Morada Completa:</b></label><br>
 							<textarea placeholder="Coloca aqui a sua morada completa" rows="3" cols="100"> </textarea> <br>
+						
+						<!--EMAIL-->
 						
 						<label for= "email"><b>Email:</b></label>
 							<input type="email" name="email"><br>
 						
+						<!--TELEFONE-->
+						
 						<label for= "tel"><b>Telefone:</b></label>
 							<input type="tel" name="telefone"><br>
+						
+						<!--CONTACTO PREFERENCIAL-->
 						
 						<label for= "contpref"><b>Contacto Preferencial:</b></label>
 							<input type= "checkbox" name="contpref" value="Email">Email
@@ -106,22 +135,34 @@
 					
 					<fieldset> <legend> Experiência com animais </legend>
 						
-						<label for= "expanimal"><b>Tem alguma experiência com algum destes animais?:</b></label>
+						<!--EXP COM ANIMAIS-->
+						
+						<label for= "expanimal"><b>Tem alguma experiência com algum destes animais?:</label>
+							</br>
 							<input type= "checkbox" name="expanimal" value="cao">cães
 							<input type= "checkbox" name="expanimal" value="gato">gatos
 							<input type= "checkbox" name="expanimal" value="outro">outros <br>
 						
+						
+						<!--ANIAMIS?-->
+						
 						<label for= "pet"><br>Tem algum destes animais em casa?:</label>
+						</br>
 							<input type= "checkbox" name="pet" value="cao">cães
 							<input type= "checkbox" name="pet" value="gato">gatos
 							<input type= "checkbox" name="pet" value="outro">outros <br>
+					
+					</br>
 						
+						<!--COMENTARIOS-->
 						<label for= "obs"><b>Observações:</b></label><br>
 							<textarea placeholder="Escreva sobre a sua experiência com animais" rows="5" cols="30"> </textarea> <br>
 							
 					</fieldset>
 						
 					<fieldset> <legend> Animal a adotar:</legend>
+						
+						<!--ANIMAL PARA ADOTAR-->
 						
 						<label for= "animal"><b>Animal a adotar:</b></label>
 							<select name= "Animal">
@@ -138,19 +179,24 @@
         						<option value="tarzan">Tarzan</option>
         						<option value="voldemort">Voldemort </option>
        						 </select> <br>
+						
+						<!--COR PREFERIDA-->
     
-        				<label for= "cor"><b>Cor preferencial:</b></label>
-        					<input type= "color"> <span style= "color: #298FB5;">O animal a adotar será-lhe entregue com um laço da sua cor preferida. </span>
+        				<label for= "cor"><b>Cor preferencial:</b></label> 
+        					<input type= "color">
+						<br><span>O animal a adotar será-lhe entregue com um laço da sua cor preferida. </span> 
+						<br><br>
 						
 						</fieldset>
 				</form>
 			</div>
 			
-				
+			<!--BOTAO PARA ABRIR POP UP-->	
 			<div class= "button1">
 				<a class="button" onclick="pop()"> ADOTAR </a>
 			</div>
 			
+			<!--POP UP-->
 			<div id= "alert">
 					<i class="fa fa-check" aria-hidden="true"></i>
 					<h1> OBRIGADO</h1>
@@ -158,6 +204,7 @@
 					<a href="Home.html"type=button class= "close" >OK</a>
 			</div>
 			
+			<!--FUNÇÃO QUE torna o pop-up visivel-->
 			<script type="text/javascript">
 					var c= 0;
 					function pop(){
