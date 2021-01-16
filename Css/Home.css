@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
+
 
 
 /* BARRA MENU SUPERIOR*/
@@ -63,6 +62,7 @@ button:hover {
 	background-color: #298FB5;
 }
 
+/*//////////////////////////////*/ 
 
 
 /* Config- Barra inferior*/
@@ -92,14 +92,13 @@ button:hover {
 	color: #FCF2F1; 
 }
 
-.navbar2 a:active{
-	color:#FCF2F1;
-}
- 
+/*//////////////////////////////*/ 
+
 
 
 /*Conf. REGISTO secção////*/
 
+/*Imagem de fundo*/
 .registo_container{
 	display: flex;
 	min-height: 100vh;
@@ -123,8 +122,8 @@ button:hover {
 	color: #022539;
 }
 
-/*conf do butao de registo*/
 
+/*conf do butao de registo*/
 #registo .cta{
 	display:inline-block;
 	margin-left: 10vw;
@@ -143,6 +142,7 @@ button:hover {
 	background-color:#298FB5;
 }
 
+/*//////////////////////////////*/ 
 
 
 
@@ -204,13 +204,12 @@ button:hover {
 }
 
 
-/*GRID DE ITENS*/
+/*conf. LISTA DE ANIMAIS BOX*/
 
 .ani-grid{
 	display: block;
 	width: 100%;
 	margin: 20px 0 0 0;
-	padding: 0;
 	list-style: none;
 	text-align: center; 
 }
@@ -231,8 +230,8 @@ button:hover {
 	margin:20px;
 }
 
-/*conf. das caixas dos animais*/
 
+/*conf. das caixas dos animais*/
 .ani-box{
 	display:inline-grid;
 	width: 100%;
@@ -246,6 +245,7 @@ button:hover {
 .ani-box:hover{
 	transform:scale(1.05);
 }
+
 
 
 /* img dos animais*/
@@ -305,6 +305,7 @@ button:hover {
 /*//////////////////////////////*/ 
 
 
+
 /* Conf. secção sobre nós*/ 
 
 .sobre_container{
@@ -358,8 +359,8 @@ button:hover {
 	color:#022539;
 }
 
-/*conf do butao de doação*/
 
+/*conf do butao de doação*/
 #sobre .ctc{
 	display:inline-block;
 	margin: 3vh 5vw 3vh 5vw;
@@ -378,6 +379,8 @@ button:hover {
 #sobre .ctc:hover{
 	background-color:#298FB5;
 }
+/*//////////////////////////////*/ 
+
 
 /*/Conf. dicas*/ 
 
@@ -409,8 +412,7 @@ button:hover {
 
 .dicas_container a{
 	display:inline-block;
-	margin-top: 3vh;
-	margin-right: 25px;
+	margin: 3vh 25px 0 0;
 	padding: 10px 30px; 
 	border-radius: 50px;
 	border:none;
@@ -427,7 +429,10 @@ button:hover {
 	background-color:#298FB5;
 }
  
-/*/Conf. Parcerias*/ 
+/*//////////////////////////////*/ 
+
+
+/*Conf. Parcerias*/ 
 
 .parceria_container {
 	display:flex;
@@ -453,9 +458,7 @@ button:hover {
 
 .parceria_container h2{
 	display:block;
-	padding-top: 10vh;
-	padding-left: 5vw;
-	padding-bottom: 5vh;
+	padding: 10vh 0 5vh 5vw;
 	background-color: transparent;
 	font-family: 'constantia';
 	font-size: 2rem;
@@ -468,9 +471,7 @@ button:hover {
 
 .parceria_container ol li{
 	display: block;
-	padding-left: 5vw;
-	padding-top: 1.5vh;
-	padding-bottom: 3vh;
+	padding: 1.5vh 0 3vh 5vw;
 	font-family: 'constantia';
 	font-size: 1rem;
 	font-weight: 500;
@@ -490,6 +491,10 @@ button:hover {
 	width:100%;
 }
 
+/*//////////////////////////////*/ 
+
+
+
 /*/conf. do footer- secção de contactos*/
 
 footer{
@@ -508,10 +513,9 @@ footer{
 }
 
 .content{
-	padding-top: 10vh;
-	padding-left: 5vw;
-	padding-bottom: 5vh;
+	padding: 10vh 0 5vh 5vw;
 }
+
 .content h2{
 	display:block;
 	font-family:'impact';
@@ -525,7 +529,6 @@ footer{
 
 .text1{
 	padding: 10px;
-	padding-left: 10px;
 	font-family: 'constantia';
 	font-size: 1rem;
 	font-weight: 200;
@@ -579,6 +582,8 @@ footer{
 	background:#298FB5 ;
 }
 
+
+
 .right_box{
 	display: inline-block;
 	float:right;
@@ -599,13 +604,11 @@ footer{
 }
 
 .content2{
-	padding-top: 10vh;
-	padding-right: 15vw;
-	padding-bottom: 5vh;
+	padding: 10vh 15vw 5vh 0;
 }
+
 .text2{
 	padding: 10px;
-	padding-left: 10px;
 	font-family: 'constantia';
 	font-size: 1rem;
 	font-weight: 200;
@@ -613,7 +616,7 @@ footer{
 	color: #FCF2F1;
 }
 
-
+/*//////    FIM    ////////////////////////*/ 
 	
 
 

@@ -4,27 +4,32 @@
 	
 	<meta charset="utf-8">
 	
+	
+	<!-- Para a colocação de icons no site-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
+	<!-- Css externo-->
 	<link rel="stylesheet" href="../Css/Home.css">
+	
 	
 	<title>FriendME</title>
 	
-<!--tentativa de colocação de imagem no title-->
-	<link rel="icon" href="../Imagem/favicon.ico" type="image/x-icon">
+	<!--Para ter a imagem icon na aba do site-->
+	<link rel="icon" href="../Imagem/icon.svg" type="image/x-icon">
 
 </head>	
 
 
 <body>
 	
-	<!--Barra de Menu superior--------------------------------------------------------------------->
+	<!--BARRA DE MENU-->
 	
 	<header>
 		
+		<!--Colocação do logo com link para pagina "HOME"-->
 		<a class="logo" href="Home.html"><img src="../Imagem/LOGO 1.svg" alt="logo"></a>
 		
-		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
 		<nav>
 			<ul class= "nav_links">
 				<li><a href= "adocao.html">ADOTAR</a></li>
@@ -33,13 +38,18 @@
 			</ul>
 		</nav>
 		
+		<!--Colocação de um link em formato de butão para a página de "login"-->	
 		<a class="login" href="login.html"><button>Login</button></a>
 	
 	</header>
 	
-<!--Barra inferior------------------------------------------------------------------------------->
+
+	<!--FIM DA BARRA DE MENU--------------------------------------->
+	
+	<!--BARRA DE MENU DE ANCORAS PARA A PRÓPRIA PÁGINA-->
 	
 	<div class= "navbar2">
+		<a href="#registo" >Registo</a>
 		<a href="#animais" >Animais para adoção</a>
 		<a href="#sobre" >Sobre Nós</a>
 		<a href="#dica" >Dicas e Info</a>
@@ -47,33 +57,49 @@
 		<a href="#contacto" >Contacto</a>
 	</div>
 	
+	<!--FIM DA BARRA DE MENU DE ANCORAS----------------------------------->
 	
-<!--Divisões da homepage---------------------------------------------------------------->
+	
 
+	
+	<!--Divisões da HOMEPAGE----------------------->
+
+	
 	<!----REGISTO---------->
 	
 	<section id= "registo">
+		
 		<div class= "registo_container">
 			
 			<div>
 				<h1>Adota um <br> novo amigo</h1>
+				
+				<!--Link em formato de butão para a página de "REGISTO"--->
 				<a href="registo.html" type="button" class="cta">REGISTAR</a>
+			
 			</div>
-		
 		</div>
 	</section>
 
+	
+	
 	<!----ANIMAIS PARA ADOTAR---------->
 	
 	<section id= "animais">
 		
 		<div class= "titulo">
 			<h1>OS NOSSOS ANIMAIS</h1>
+			
+			<!--Link em formato de butão para a página de "ADOÇÃO" onde estão todos os animais--->
 			<a href="adocao.html" type="button" class="ctb">VER TODOS</a>
 		</div>
 		
+		
+		<!--Uma lista de todos os animais com imagens e clicaveis para a sua própria página--->
 		<ul class= "ani-grid">
 			<li>
+				
+			<!--------------GAYA--------------------------->		
 				<div class= "ani-box ani-gaya">
 					<a href="../Animais/html/GAYA.html">
 						<div class="ani-info"><h3>GAYA</h3>
@@ -83,16 +109,21 @@
 				</div>
 			</li>
 			
+			
 			<li>
+				
+				<!--------------TOMÉ------------------------->
 				<div class= "ani-box ani-tome">
 					<a href="../Animais/html/TOME.html">
-						<div class="ani-info"><h3>TOMÉ</h3> ola 
+						<div class="ani-info"><h3>TOMÉ</h3>
 							<p> Cão com 5 ano precisa de um amigo</p></div>
 					</a>
 				</div>
 			</li>
 			
+			
 			<li>
+				<!--------------FLOPPY------------------------>
 				<div class= "ani-box ani-floppy">
 					<a href="../Animais/html/FLOPPY.html">
 						<div class="ani-info">
@@ -103,7 +134,9 @@
 				</div>
 			</li>
 			
+			
 			<li>
+				<!--------------NOÉ------------------------>
 				<div class= "ani-box ani-noe">
 					<a href="../Animais/html/NOE.html">
 						<div class="ani-info">
@@ -118,10 +151,12 @@
 	</section>
 	
 	
+	
 	<!----SOBRE---------->
 	
 	<section id= "sobre">
 		<div class= "sobre_container">
+			
 			<div class= "text_container">
 				
 				<h1>Sobre Nós</h1>
@@ -136,10 +171,12 @@
 				
 				<h3>Precisamos sempre da sua ajuda: </h3>
 				
+				<!--Link em formato de butão para a página de "DOAÇÃO"--->
 				<a href="doacao.html" type="button" class="ctc">QUERO CONTRIBUIR</a>
 		</div>
 	</div>
 </section>
+	
 	
 	
 	<!----DICAS---------->
@@ -149,6 +186,8 @@
 		
 		<h1>Damos-lhe as melhores dicas de como acolher o seu novo amigo em casa. </h1>
 		
+		
+		<!--Link em formato de butão para a página de "DICAS"--->
 		<a href="dicas.html" type="button" class="ctd">CUIDADOS DE ALIMENTAÇÃO</a>
 	
 	</div>
@@ -163,6 +202,7 @@
 			
 			<h2>Temos parcerias com diversas clínicas veterinárias</h2>
 			
+			<!--lista ordenada do tipo "a" de todas as clínicas veterinárias parceiras-->
 			<ol type="a">
 				<li>Hospital Veterinário de Coimbra</li>
 				<li>Monvet serviços Veterináriosa</li>
@@ -173,7 +213,8 @@
 		
 		</div>
 		
-		<!----IFRAME MAPA---------->
+		
+		<!----IFRAME MAPA, só com uma das clínicas asssinaladas---------->
 		
 		<div class="map_container">
 		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6094.8454849654645!2d-8.410383177156174!3d40.19965838495379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa282d3533653267d!2sMonvet-servi%C3%A7os%20Veterin%C3%A1rios%20Lda!5e0!3m2!1spt-PT!2spt!4v1609022633850!5m2!1spt-PT!2spt" width="600" height="400"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -181,31 +222,41 @@
 	
 	</div>
 	
-	<!----FOOTER- CONTACTOS---------->
+	
+	<!----FOOTER - CONTACTOS---------->
 
 	<footer>
 		<div class="content_box">
 			
+			<!--Info com todos os contactos e utilização dos icons do stylesheet inicial-->
 			
 			<div class= "left_box">
 				
 				<div class="content">
 					<h2>Contactos</h2>
 						
+					
+					<!---EMAIL --->
 					<div class= "email">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 						<span class= "text1"> friendme@gmail.com</span>
 					</div>
 				
+					
+					<!---TELEFONE------->
 					<div class="telefone">
 						<i class="fa fa-phone" aria-hidden="true"></i>
 						<span class= "text1">239 867 79962</span>
 					</div>
 				
+					
+					<!---MORADA------->
 					<div class= "morada">
 						<i class="fa fa-map-marker" aria-hidden="true"></i>
 						<span class="text1">Rua do Gato Cinzento <br>3000-040 Coimbra</span></div>
 			
+					
+					<!---CONTACTOS SOCIAIS- para adição de link (que não existe no momento)------->
 					<div class="social">
 						<a href="a"><span class="fa fa-facebook"></span></a>
 						<a href="a"><span class="fa fa-instagram"></span></a>
@@ -217,12 +268,14 @@
 		</div>
 	
 		
+		<!---Formulário que permite o utilizador enviar uma mensagem--->
+		
 		<div class= "right_box">
 			
 			<div class= "content2">
 				<h2>Contacte-nos</h2>
 				
-				<form action="#">
+				<form>
 
 					<div class= "email">
 						<div class="text2">Email*</div>
@@ -242,6 +295,8 @@
 			</div>
 		</div>
 	</footer>
+	
+	
 	
 </body>
 </html>
