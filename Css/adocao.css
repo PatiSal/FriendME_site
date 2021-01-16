@@ -48,6 +48,7 @@ header {
 	color: #298FB5;
 }
 
+/*botão  login*/
 button {
 	padding: 5px 25px;
 	padding-right: 15px;
@@ -63,6 +64,8 @@ button:hover {
 }
 
 /*//////////////////////////////*/
+
+
 
 #header{
 	padding-top: 15vh;
@@ -83,7 +86,7 @@ button:hover {
 }
 
 
-/*/////*/
+/*/////////////////////////*/
 
 /*GRID DE ITENS*/
 
