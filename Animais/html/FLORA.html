@@ -10,13 +10,14 @@
 	
 </head>
 
-	<!--Barra de Menu superior--------------------------------------------------------------------->
+	<!--BARRA DE MENU-->
 	
 	<header>
 		
+		<!--Colocação do logo com link para pagina "HOME"-->
 		<a class="logo" href="../../Html/Home.html"><img src="../../Imagem/LOGO 1.svg" alt="logo"></a>
 		
-		
+		<!--Barra de menu com a lista de todos os itens de navegação-->
 		<nav>
 			<ul class= "nav_links">
 				<li><a href= "../../Html/adocao.html">ADOTAR</a></li>
@@ -25,9 +26,12 @@
 			</ul>
 		</nav>
 		
+		<!--Colocação de um link em formato de butão para a página de "login"-->
 		<a class="login" href="../../Html/login.html"><button>Login</button></a>
 	
 	</header>
+	
+	<!--FIM DA BARRA DE MENU--------------------------------------->
 	
 <body>
 	<section id= "info">
@@ -47,35 +51,36 @@
 			
 		</div>
 		
+		<!---BOTÃO PARA ADOTAR-->
 		<div class= "button">
 			<a class="login" href="../../Html/Adotar_form.html"><button>ADOTAR</button></a>
 		</div>
 	
 	</section>
 	
-	
+	<!---GALERIA DE IMAGENS--->
 	<section id= "galeria">
 	
 		<img id="featured" src="../../Imagem/Flora.png">
 		
 		<div id="slide-wrapper">
 			
-			<img id="slideLeft" class="arrow" src="../../Imagem/arrow_left.svg">
+			<img id="slideLeft" class="arrow" src="../../Imagem/arrow_left.svg" alt="seta esquerda">
 			
 			<div id="slider">
 				
-				<img class="thumbnail active" src="../../Imagem/Flora.png">
+				<img class="thumbnail active" src="../../Imagem/Flora.png" alt="foto da Flora">
 			
-				<img class="thumbnail" src="../../Imagem/flora1.jpg">
-				<img class="thumbnail" src="../../Imagem/flora2.jpg">
-				<img class="thumbnail" src="../../Imagem/flora3.jpg">
-				<img class="thumbnail" src="../../Imagem/noe4.jpg">
+				<img class="thumbnail" src="../../Imagem/flora1.jpg" alt="foto da Flora">
+				<img class="thumbnail" src="../../Imagem/flora2.jpg" alt="foto da Flora">
+				<img class="thumbnail" src="../../Imagem/flora3.jpg" alt="foto da Flora">
+				<img class="thumbnail" src="../../Imagem/noe4.jpg" alt="foto da Flora">
 			</div>
 			
-			<img id="slideRight" class="arrow" src="../../Imagem/arrow_right.svg">
+			<img id="slideRight" class="arrow" src="../../Imagem/arrow_right.svg" alt="seta direita">
 		</div>
 		
-	
+	<!-- FUNÇÃO QUE PERMITE MOVER AS IMAGENS DA DIREITA E ESQUERDA, E QUE MOSTRA QUAL A IMAGEM ATIVA É--->
 	<script type="text/javascript">
 		let thumbnails = document.getElementsByClassName('thumbnail')
 
