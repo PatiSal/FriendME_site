@@ -470,7 +470,7 @@ button:hover {
 }
 
 .parceria_container ol li{
-	display: block;
+	list-style-position: inside;
 	padding: 1.5vh 0 3vh 5vw;
 	font-family: 'constantia';
 	font-size: 1rem;
