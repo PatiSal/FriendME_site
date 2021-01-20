@@ -616,6 +616,16 @@ footer{
 	color: #FCF2F1;
 }
 
+input{
+	border-radius: 50px; 
+	border-color: transparent;
+}
+
+textarea{
+	border-radius: 50px; 
+	border-color: transparent;
+}
+
 /*//////    FIM    ////////////////////////*/ 
 	
 
